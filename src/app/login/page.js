@@ -33,7 +33,7 @@ export default function LoginPage() {
                 )
 
             const res = await fetch(
-                "http://localhost:5000/api/auth/login",
+                "https://festpro.onrender.com/api/auth/login",
                 {
                     method: "POST",
 

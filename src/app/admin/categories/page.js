@@ -42,7 +42,7 @@ export default function CategoriesPage() {
         )
 
       const res = await fetch(
-        `http://localhost:5000/categories?organizationCode=${organizationCode}`
+        `https://festpro.onrender.com/categories?organizationCode=${organizationCode}`
       )
 
       const data = await res.json()
@@ -90,7 +90,7 @@ export default function CategoriesPage() {
 
       await fetch(
 
-        "http://localhost:5000/categories",
+        "https://festpro.onrender.com/categories",
 
         {
 
@@ -141,7 +141,7 @@ export default function CategoriesPage() {
 
       await fetch(
 
-        `http://localhost:5000/categories/${editingId}`,
+        `https://festpro.onrender.com/categories/${editingId}`,
 
         {
 
@@ -187,7 +187,7 @@ export default function CategoriesPage() {
 
       await fetch(
 
-        `http://localhost:5000/categories/${id}`,
+        `https://festpro.onrender.com/categories/${id}`,
 
         {
 

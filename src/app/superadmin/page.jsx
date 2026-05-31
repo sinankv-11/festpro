@@ -38,7 +38,7 @@ export default function SuperAdminPage() {
 
                 const res =
                     await fetch(
-                        "http://localhost:5000/organizations"
+                        "https://festpro.onrender.com/organizations"
                     )
 
                 const data =
@@ -60,7 +60,7 @@ export default function SuperAdminPage() {
             try {
 
                 await fetch(
-                    "http://localhost:5000/organizations",
+                    "https://festpro.onrender.com/organizations",
                     {
                         method: "POST",
 
@@ -103,7 +103,7 @@ export default function SuperAdminPage() {
             try {
 
                 await fetch(
-                    `http://localhost:5000/organizations/${id}`,
+                    `https://festpro.onrender.com/organizations/${id}`,
                     {
                         method: "DELETE",
                     }

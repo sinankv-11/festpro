@@ -44,7 +44,7 @@ export default function SettingsPage() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/settings"
+        "https://festpro.onrender.com/settings"
       )
 
 
@@ -90,7 +90,7 @@ export default function SettingsPage() {
 
       await fetch(
 
-        "http://localhost:5000/settings",
+        "https://festpro.onrender.com/settings",
 
         {
 

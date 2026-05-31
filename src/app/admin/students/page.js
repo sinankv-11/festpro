@@ -87,15 +87,15 @@ export default function StudentsPage() {
       ] = await Promise.all([
 
         fetch(
-          `http://localhost:5000/students?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/students?organizationCode=${organizationCode}`
         ),
 
         fetch(
-          `http://localhost:5000/teams?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/teams?organizationCode=${organizationCode}`
         ),
 
         fetch(
-          `http://localhost:5000/categories?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/categories?organizationCode=${organizationCode}`
         )
 
       ])
@@ -180,7 +180,7 @@ export default function StudentsPage() {
 
       await fetch(
 
-        "http://localhost:5000/students",
+        "https://festpro.onrender.com/students",
 
         {
 
@@ -237,7 +237,7 @@ export default function StudentsPage() {
 
       await fetch(
 
-        `http://localhost:5000/students/${editingId}`,
+        `https://festpro.onrender.com/students/${editingId}`,
 
         {
 
@@ -293,7 +293,7 @@ export default function StudentsPage() {
 
       await fetch(
 
-        `http://localhost:5000/students/${id}`,
+        `https://festpro.onrender.com/students/${id}`,
 
         {
 

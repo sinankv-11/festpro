@@ -80,7 +80,7 @@ export default function ExportsPage() {
                     <button
                         onClick={() =>
                             downloadFile(
-                                "http://localhost:5000/export/students"
+                                "https://festpro.onrender.com/export/students"
                             )
                         }
                         className="w-full bg-cyan-400 text-black font-bold py-4 rounded-2xl hover:scale-105 transition-all"
@@ -116,7 +116,7 @@ export default function ExportsPage() {
                     <button
                         onClick={() =>
                             downloadFile(
-                                "http://localhost:5000/export/programs"
+                                "https://festpro.onrender.com/export/programs"
                             )
                         }
                         className="w-full bg-orange-400 text-black font-bold py-4 rounded-2xl hover:scale-105 transition-all"                    >
@@ -151,7 +151,7 @@ export default function ExportsPage() {
                     <button
                         onClick={() =>
                             downloadFile(
-                                "http://localhost:5000/export/teams"
+                                "https://festpro.onrender.com/export/teams"
                             )
                         }
                         className="w-full bg-green-400 text-black font-bold py-4 rounded-2xl hover:scale-105 transition-all"
@@ -187,7 +187,7 @@ export default function ExportsPage() {
                     <button
                         onClick={() =>
                             downloadFile(
-                                "http://localhost:5000/export/assignments"
+                                "https://festpro.onrender.com/export/assignments"
                             )
                         }
                         className="w-full bg-pink-400 text-black font-bold py-4 rounded-2xl hover:scale-105 transition-all"
@@ -223,7 +223,7 @@ export default function ExportsPage() {
                     <button
                         onClick={() =>
                             downloadFile(
-                                "http://localhost:5000/export/results"
+                                "https://festpro.onrender.com/export/results"
                             )
                         }
                         className="w-full bg-yellow-400 text-black font-bold py-4 rounded-2xl hover:scale-105 transition-all"

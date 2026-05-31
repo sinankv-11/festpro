@@ -42,7 +42,7 @@ export default function TypesPage() {
         )
 
       const res = await fetch(
-        `http://localhost:5000/types?organizationCode=${organizationCode}`
+        `https://festpro.onrender.com/types?organizationCode=${organizationCode}`
       )
 
       const data = await res.json()
@@ -90,7 +90,7 @@ export default function TypesPage() {
 
       await fetch(
 
-        "http://localhost:5000/types",
+        "https://festpro.onrender.com/types",
 
         {
 
@@ -141,7 +141,7 @@ export default function TypesPage() {
 
       await fetch(
 
-        `http://localhost:5000/types/${editingId}`,
+        `https://festpro.onrender.com/types/${editingId}`,
 
         {
 
@@ -187,7 +187,7 @@ export default function TypesPage() {
 
       await fetch(
 
-        `http://localhost:5000/types/${id}`,
+        `https://festpro.onrender.com/types/${id}`,
 
         {
 

@@ -42,11 +42,11 @@ const [
 ] = await Promise.all([
 
   fetch(
-    `http://localhost:5000/leaderboard?organizationCode=${organizationCode}`
+    `https://festpro.onrender.com/leaderboard?organizationCode=${organizationCode}`
   ),
 
   fetch(
-    `http://localhost:5000/published-results?organizationCode=${organizationCode}`
+    `https://festpro.onrender.com/published-results?organizationCode=${organizationCode}`
   ),
 
 ])

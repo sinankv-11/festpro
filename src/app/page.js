@@ -26,7 +26,7 @@ export default function LandingPage() {
 
     const res =
       await fetch(
-        "http://localhost:5000/organizations"
+        "https://festpro.onrender.com/organizations"
       )
 
     const organizations =

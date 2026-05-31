@@ -46,7 +46,7 @@ export default function TeamsPage() {
         )
 
       const res = await fetch(
-        `http://localhost:5000/teams?organizationCode=${organizationCode}`
+        `https://festpro.onrender.com/teams?organizationCode=${organizationCode}`
       )
 
 
@@ -98,7 +98,7 @@ export default function TeamsPage() {
 
       await fetch(
 
-        "http://localhost:5000/teams",
+        "https://festpro.onrender.com/teams",
 
         {
 
@@ -149,7 +149,7 @@ export default function TeamsPage() {
 
       await fetch(
 
-        `http://localhost:5000/teams/${editingId}`,
+        `https://festpro.onrender.com/teams/${editingId}`,
 
         {
 
@@ -195,7 +195,7 @@ export default function TeamsPage() {
 
       await fetch(
 
-        `http://localhost:5000/teams/${id}`,
+        `https://festpro.onrender.com/teams/${id}`,
 
         {
 

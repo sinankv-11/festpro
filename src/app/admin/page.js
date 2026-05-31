@@ -39,86 +39,99 @@ export default function DashboardPage() {
   // FETCH
   const fetchData = async () => {
 
-  try {
+    try {
 
-    const organizationCode =
-      localStorage.getItem(
-        "organizationCode"
+      const [
+
+        leaderboardRes,
+
+        resultsRes,
+
+        studentsRes,
+
+        programsRes,
+
+      ] = await Promise.all([
+
+        fetch(
+          "https://festpro.onrender.com/leaderboard"
+        ),
+
+        fetch(
+          "https://festpro.onrender.com/results"
+        ),
+
+        fetch(
+          "https://festpro.onrender.com/students"
+        ),
+
+        fetch(
+          "https://festpro.onrender.com/programs"
+        ),
+
+      ])
+
+
+
+      const leaderboardData =
+        await leaderboardRes.json()
+
+      const resultsData =
+        await resultsRes.json()
+
+      const studentsData =
+        await studentsRes.json()
+
+      const programsData =
+        await programsRes.json()
+
+
+
+      setLeaderboard(
+
+        Array.isArray(leaderboardData)
+          ? leaderboardData
+          : []
+
       )
 
-    const [
 
-      leaderboardRes,
 
-      resultsRes,
+      setResults(
 
-      studentsRes,
+        Array.isArray(resultsData)
+          ? resultsData
+          : []
 
-      programsRes,
+      )
 
-    ] = await Promise.all([
 
-      fetch(
-        `http://localhost:5000/leaderboard?organizationCode=${organizationCode}`
-      ),
 
-      fetch(
-        `http://localhost:5000/results?organizationCode=${organizationCode}`
-      ),
+      setStudents(
 
-      fetch(
-        `http://localhost:5000/students?organizationCode=${organizationCode}`
-      ),
+        Array.isArray(studentsData)
+          ? studentsData
+          : []
 
-      fetch(
-        `http://localhost:5000/programs?organizationCode=${organizationCode}`
-      ),
+      )
 
-    ])
 
-    const leaderboardData =
-      await leaderboardRes.json()
 
-    const resultsData =
-      await resultsRes.json()
+      setPrograms(
 
-    const studentsData =
-      await studentsRes.json()
+        Array.isArray(programsData)
+          ? programsData
+          : []
 
-    const programsData =
-      await programsRes.json()
+      )
 
-    setLeaderboard(
-      Array.isArray(leaderboardData)
-        ? leaderboardData
-        : []
-    )
+    } catch (err) {
 
-    setResults(
-      Array.isArray(resultsData)
-        ? resultsData
-        : []
-    )
+      console.log(err)
 
-    setStudents(
-      Array.isArray(studentsData)
-        ? studentsData
-        : []
-    )
-
-    setPrograms(
-      Array.isArray(programsData)
-        ? programsData
-        : []
-    )
-
-  } catch (err) {
-
-    console.log(err)
+    }
 
   }
-
-}
 
 
 

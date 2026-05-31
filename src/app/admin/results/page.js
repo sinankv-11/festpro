@@ -74,11 +74,11 @@ const [statusFilter,
       ] = await Promise.all([
 
         fetch(
-          `http://localhost:5000/assignments?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/assignments?organizationCode=${organizationCode}`
         ),
 
         fetch(
-          `http://localhost:5000/results?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/results?organizationCode=${organizationCode}`
         ),
 
       ])
@@ -175,7 +175,7 @@ const [statusFilter,
     try {
 
       await fetch(
-        "http://localhost:5000/results",
+        "https://festpro.onrender.com/results",
         {
 
           method: "POST",
@@ -225,7 +225,7 @@ const [statusFilter,
     try {
 
       await fetch(
-        `http://localhost:5000/results/${editingId}`,
+        `https://festpro.onrender.com/results/${editingId}`,
         {
 
           method: "PUT",
@@ -275,7 +275,7 @@ const [statusFilter,
     try {
 
       await fetch(
-        `http://localhost:5000/results/${id}`,
+        `https://festpro.onrender.com/results/${id}`,
         {
 
           method: "DELETE",
@@ -315,7 +315,7 @@ const [statusFilter,
     try {
 
       await fetch(
-        `http://localhost:5000/results/${result._id}`,
+        `https://festpro.onrender.com/results/${result._id}`,
         {
 
           method: "PUT",

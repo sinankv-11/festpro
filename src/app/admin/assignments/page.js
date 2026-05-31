@@ -72,15 +72,15 @@ const [programFilter,
       ] = await Promise.all([
 
         fetch(
-          `http://localhost:5000/students?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/students?organizationCode=${organizationCode}`
         ),
 
         fetch(
-          `http://localhost:5000/programs?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/programs?organizationCode=${organizationCode}`
         ),
 
         fetch(
-          `http://localhost:5000/assignments?organizationCode=${organizationCode}`
+          `https://festpro.onrender.com/assignments?organizationCode=${organizationCode}`
         ),
 
       ])
@@ -198,7 +198,7 @@ const [programFilter,
     try {
 
       await fetch(
-        "http://localhost:5000/assignments",
+        "https://festpro.onrender.com/assignments",
         {
           method: "POST",
 
@@ -245,7 +245,7 @@ const [programFilter,
 
         await fetch(
 
-          `http://localhost:5000/assignments/${editingId}`,
+          `https://festpro.onrender.com/assignments/${editingId}`,
 
           {
 
@@ -296,7 +296,7 @@ const [programFilter,
 
         await fetch(
 
-          `http://localhost:5000/assignments/${id}`,
+          `https://festpro.onrender.com/assignments/${id}`,
 
           {
 
