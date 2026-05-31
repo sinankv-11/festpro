@@ -1,0 +1,9 @@
+node_modules
+.next
+.env
+
+server/node_modules
+server/.next
+server/.env
+
+*.log
