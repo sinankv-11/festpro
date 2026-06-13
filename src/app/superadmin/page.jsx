@@ -3,7 +3,7 @@ import {
     useState,
     useEffect,
 } from "react"
-
+import { ArrowLeft } from "lucide-react";
 
 export default function SuperAdminPage() {
 
@@ -122,6 +122,13 @@ export default function SuperAdminPage() {
     return (
 
         <div className="min-h-screen bg-black text-white p-10">
+
+            <button
+    onClick={() => window.history.back()}
+    className="fixed top-5 left-5 w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition z-50"
+>
+    <ArrowLeft size={22} />
+</button>
 
             <div className="max-w-xl mx-auto bg-white/5 border border-white/10 rounded-[35px] p-8">
 

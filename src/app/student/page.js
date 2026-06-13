@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 import {
-
+  ArrowLeft,
   Trophy,
 
   Medal,
@@ -112,7 +112,12 @@ const [
 
     <div className="min-h-screen bg-black text-white p-6 md:p-10">
 
-
+      <button
+      onClick={() => window.history.back()}
+      className="fixed top-6 left-6 w-12 h-12 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 transition-all z-50"
+    >
+      <ArrowLeft size={22} />
+    </button>
 
       {/* HEADER */}
 

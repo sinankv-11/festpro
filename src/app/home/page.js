@@ -1,10 +1,11 @@
 "use client"
 
 import Link from "next/link"
+import { ArrowLeft } from "lucide-react";
 
 export default function HomePage() {
 
-  const code =
+  const name =
     typeof window !== "undefined"
       ? localStorage.getItem(
           "organizationCode"
@@ -15,11 +16,17 @@ export default function HomePage() {
 
     <div className="min-h-screen bg-black text-white flex items-center justify-center p-6">
 
+      <button
+      onClick={() => window.history.back()}
+      className="fixed top-6 left-6 w-12 h-12 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 transition z-50"
+    >
+      <ArrowLeft size={22} />
+    </button>
+
       <div className="w-full max-w-lg bg-white/5 border border-white/10 rounded-[35px] p-10">
 
         <h1 className="text-5xl font-black text-center mb-3">
-
-          {code}
+          {name}
         </h1>
 
         <p className="text-center text-gray-400 mb-10">

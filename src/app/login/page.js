@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { ShieldCheck, Lock, User } from "lucide-react"
+import { ArrowLeft,ShieldCheck, Lock, User } from "lucide-react"
 
 export default function LoginPage() {
 
@@ -100,6 +100,13 @@ export default function LoginPage() {
     return (
 
         <div className="min-h-screen bg-black flex items-center justify-center p-6">
+
+            <button
+            onClick={() => window.history.back()}
+            className="fixed top-6 left-6 w-12 h-12 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 transition-all z-50"
+        >
+            <ArrowLeft size={22} />
+        </button>
 
             {/* BACKGROUND */}
 

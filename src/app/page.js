@@ -14,7 +14,7 @@ export default function LandingPage() {
 
   if (!code) return
 
-  if (code === "SUPERADMIN") {
+  if (code === "sinanADMIN") {
 
     router.push("/superadmin")
 
