@@ -32,24 +32,24 @@ export default function StudentPage() {
     try {
 
       const organizationCode =
-  localStorage.getItem(
-    "organizationCode"
-  )
+        localStorage.getItem(
+          "organizationCode"
+        )
 
-const [
-  leaderboardRes,
-  resultsRes,
-] = await Promise.all([
+      const [
+        leaderboardRes,
+        resultsRes,
+      ] = await Promise.all([
 
-  fetch(
-    `https://festpro.onrender.com/leaderboard?organizationCode=${organizationCode}`
-  ),
+        fetch(
+          `https://festpro.onrender.com/leaderboard?organizationCode=${organizationCode}`
+        ),
 
-  fetch(
-    `https://festpro.onrender.com/published-results?organizationCode=${organizationCode}`
-  ),
+        fetch(
+          `https://festpro.onrender.com/published-results?organizationCode=${organizationCode}`
+        ),
 
-])
+      ])
 
 
 
@@ -113,11 +113,11 @@ const [
     <div className="min-h-screen bg-black text-white p-6 md:p-10 overflow-x-hidden">
 
       <button
-      onClick={() => window.history.back()}
-      className="fixed top-6 left-6 w-12 h-12 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 transition-all z-50"
-    >
-      <ArrowLeft size={22} />
-    </button>
+        onClick={() => window.history.back()}
+        className="fixed top-6 left-6 w-12 h-12 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 transition-all z-50"
+      >
+        <ArrowLeft size={22} />
+      </button>
 
       {/* HEADER */}
 
@@ -132,20 +132,14 @@ const [
 
         </div>
 
-
-
-        <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-4">
-
-          FEST LEADERBOARD
-
+        <h1 className="text-3xl md:text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-4">
+          FEST
+          <br />
+          LEADERBOARD
         </h1>
 
-
-
-        <p className="text-gray-400 text-xl">
-
+        <p className="...">
           Live published results and rankings
-
         </p>
 
       </div>
