@@ -110,7 +110,7 @@ const [
 
   return (
 
-    <div className="min-h-screen bg-black text-white p-6 md:p-10">
+    <div className="min-h-screen bg-black text-white p-6 md:p-10 overflow-x-hidden">
 
       <button
       onClick={() => window.history.back()}
