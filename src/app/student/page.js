@@ -121,7 +121,7 @@ export default function StudentPage() {
 
       {/* HEADER */}
 
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 flex flex-col items-center">
 
         <div className="inline-flex items-center justify-center w-28 h-28 rounded-[35px] bg-yellow-400/10 border border-yellow-400/20 mb-6">
 
@@ -132,11 +132,11 @@ export default function StudentPage() {
 
         </div>
 
-        <h1 className="text-3xl md:text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-4">
-          FEST
-          <br />
-          LEADERBOARD
-        </h1>
+        <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-4 leading-tight">
+  FEST
+  <br />
+  LEADERBOARD
+</h1>
 
         <p className="...">
           Live published results and rankings
