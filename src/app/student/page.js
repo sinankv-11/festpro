@@ -120,7 +120,7 @@ export default function StudentPage() {
       </button>
 
       {/* HEADER */}
-
+<div className="min-h-screen bg-black text-white p-6 md:p-10 overflow-x-hidden border-4 border-red-500">
       <div className="text-center mb-16 flex flex-col items-center">
 
         <div className="inline-flex items-center justify-center w-28 h-28 rounded-[35px] bg-yellow-400/10 border border-yellow-400/20 mb-6">
@@ -138,12 +138,12 @@ export default function StudentPage() {
   LEADERBOARD
 </h1>
 
-        <p className="...">
-          Live published results and rankings
-        </p>
+        <p className="text-gray-400 text-lg md:text-xl px-4">
+  Live published results and rankings
+</p>
 
       </div>
-
+</div>
 
 
       {/* LEADERBOARD */}
@@ -166,9 +166,9 @@ export default function StudentPage() {
 
 
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto max-w-full">
 
-          <table className="w-full">
+          <table className="w-full min-w-[600px]">
 
             <thead className="bg-black/40 border-b border-white/10">
 
@@ -271,9 +271,9 @@ export default function StudentPage() {
 
 
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto max-w-full">
 
-          <table className="w-full">
+          <table className="w-full min-w-[600px]">
 
             <thead className="bg-black/40 border-b border-white/10">
 
