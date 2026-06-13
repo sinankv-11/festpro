@@ -4,6 +4,7 @@ export const metadata = {
   title: "FestPro",
   description: "Fest Management System",
   manifest: "/manifest.json",
+  themeColor: "#000000",
   icons: {
     icon: "/icon-192.png",
     apple: "/icon-192.png",

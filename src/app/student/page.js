@@ -134,7 +134,7 @@ const [
 
 
 
-        <h1 className="text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-4">
+        <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-4">
 
           FEST LEADERBOARD
 
